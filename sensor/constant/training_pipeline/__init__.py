@@ -78,7 +78,11 @@ MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
 MODEL Evauation related constant start with MODEL_EVALUATION var name
 """
 
+MODEL_EVALUVATION_DIR_NAME : str ="model_evaluvation"
+
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
+
+MODEL_EVALUATION_REPORT_NAME = "report.yaml"
 
 MODEL_PUSHER_BUCKET_NAME = TRAINING_BUCKET_NAME
 
