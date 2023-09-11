@@ -52,11 +52,13 @@ class ModelTrainerArtifact:
 class ModelEvaluationArtifact:
     is_model_accepted: bool
 
-    changed_accuracy: float
+    improved_accuracy: float
 
     best_model_path: str
 
     trained_model_path: str
+
+    train_model_metric_artifact: ClassificationMetricArtifact
 
     best_model_metric_artifact: ClassificationMetricArtifact
 

@@ -3,6 +3,9 @@ import os
 
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
+
+SAVE_MODEL_DIR = os.path.join("saved_models")
+
 TARGET_COLUMN = "class"
 
 PIPELINE_NAME: str = "sensor"
