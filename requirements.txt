@@ -1,4 +1,5 @@
 certifi==2023.7.22
+configparser==6.0.0
 dataclasses==0.6
 dill==0.3.7
 dnspython==2.4.2
@@ -9,13 +10,16 @@ joblib==1.3.2
 numpy==1.24.4
 pandas==2.0.3
 pymongo==4.5.0
+PyMySQL==1.1.0
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 pytz==2023.3.post1
 PyYAML==6.0.1
 scikit-learn==1.3.0
 scipy==1.10.1
--e git+https://github.com/sachint97/sensor-fault-detection.git@7705815a81cd278440039a699c5fae2053ba384a#egg=sensor_fault_detection
+-e git+https://github.com/sachint97/sensor-fault-detection.git@5701df8af491579575c61bffc61035f44cc5f3be#egg=sensor_fault_detection
+shutils==0.1.0
 six==1.16.0
 threadpoolctl==3.2.0
 tzdata==2023.3
+xgboost==1.7.6

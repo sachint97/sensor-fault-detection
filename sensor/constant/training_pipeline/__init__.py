@@ -4,7 +4,7 @@ import os
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
 
-SAVE_MODEL_DIR = os.path.join("saved_models")
+SAVED_MODEL_DIR = os.path.join("saved_models")
 
 TARGET_COLUMN = "class"
 
@@ -77,16 +77,18 @@ MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
+
+MODEL_TRAINER_OVER_FIITING_UNDER_FITTING_THRESHOLD: float = 0.05
+
 """
 MODEL Evauation related constant start with MODEL_EVALUATION var name
 """
 
-MODEL_EVALUVATION_DIR_NAME : str ="model_evaluvation"
+MODEL_EVALUATION_DIR_NAME : str ="model_evaluvation"
 
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
 
 MODEL_EVALUATION_REPORT_NAME = "report.yaml"
 
-MODEL_PUSHER_BUCKET_NAME = TRAINING_BUCKET_NAME
-
-MODEL_PUSHER_S3_KEY = "model-registry"
+MODEL_PUSHER_DIR_NAME = "model_pusher"
+MODEL_PUSHER_SAVED_MODEL_DIR = SAVED_MODEL_DIR

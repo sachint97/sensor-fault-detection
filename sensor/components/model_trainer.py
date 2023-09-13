@@ -21,7 +21,7 @@ class ModelTrainer:
     def train_model(self,x_train,y_train):
         try:
             xgb_clf = XGBClassifier()
-            xgb_clf.fi(x_train,y_train)
+            xgb_clf.fit(x_train,y_train)
             return xgb_clf
         except Exception as e:
             raise SensorException(e,sys)
